@@ -35,7 +35,7 @@ const Services = () => {
               <p className="text-[36px] my-3">We supply mechanical consumables: </p>
               <ul className="flex flex-col text-[20px] list-outside list-disc gap-4">
                 <li>Lubricants</li>
-                <li>Belts.</li>
+                <li>Belts</li>
                 <li>Fasteners</li>
                 <li>Couplings</li>
                 <li>Bearings</li>
