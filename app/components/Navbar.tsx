@@ -31,7 +31,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex flex-row text-[18px] justify-end bg-gray-300 text-blue-950 w-[70%] pr-32">
           {NAVLINKS.map((navlink) => ( 
             <li key={navlink.title} className="flex mx-10 align-text-bottom items-end">
-              <Link href={navlink.link} className="mb-2 font-medium hover:text-[#e46c0a] hover:shadow-lg">{navlink.title}</Link>
+              <Link href={navlink.link} className="mb-2 font-medium hover:text-[#e46c0a]">{navlink.title}</Link>
             </li>
           ))}
         </ul>
