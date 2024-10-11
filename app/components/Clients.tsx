@@ -8,14 +8,17 @@ import MBZC from "@/public/assets/mbz.png";
 const Clients = () => {
   return (
     <>
-      <div>
-        <h3>Our Clients</h3>
-        <div className="flex flex-row">
-          <Image src={NFCA} alt="nfca" className="w-[250px] h-auto object-contain" />
-          <Image src={BAT} alt="bat" className="w-[250px] h-auto object-contain" />
-          <Image src={Hudtech} alt="hudtech" className="w-[250px] h-auto object-contain" />
-          <Image src={RITC} alt="ritc" className="w-[250px] h-auto object-contain"/>
-          <Image src={MBZC} alt="mbz" className="w-[250px] h-auto object-contain" />
+      <div className="flex flex-col items-center my-10">
+        <h1 className="text-[48px] font-bold text-[#e46c0a]">Our Clients</h1>
+        <div className="flex flex-row w-full gap-x-8 items-center justify-center">
+          <div className="flex flex-col items-center">
+            <Image src={NFCA} alt="nfca" className="w-[150px] h-auto object-contain" />
+            <p className="font-bold text-blue-700">NFCA</p>
+          </div>
+          <Image src={BAT} alt="bat" className="w-[150px] h-auto object-contain" />
+          <Image src={Hudtech} alt="hudtech" className="w-[150px] h-auto object-contain" />
+          <Image src={RITC} alt="ritc" className="w-[150px] h-auto object-contain"/>
+          <Image src={MBZC} alt="mbz" className="w-[150px] h-auto object-contain" />
           <p className="text-[24px] font-bold">NJATI FOOD PROCCESING</p>
         </div>
       </div>
