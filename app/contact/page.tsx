@@ -33,37 +33,38 @@ const Contact = () => {
           <p>info@mexus.co.zm</p>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col items-center">
         <h1 className="text-[48px] font-bold text-[#e46c0a]">Contact Form</h1>
-        <form className="w-full">
-          <div className="flex flex-row bg-yellow-500 justify-around my-30 px-30">
-            <div className="w-[30%]">
-              <label htmlFor="name">Name:</label>
-              <input type="text" name="name" id="name" required/>
+        <form className="flex flex-col w-full items-center" action={"/form-handler"} method="POST">
+          <div className="flex flex-col lg:flex-row justify-between my-10 w-[65%]">
+            <div className="flex w-[40%] border-b-2">
+              <Icon icon="mdi:user" width={24} height={24} />
+              <input type="text" name="name" id="name" required placeholder="Name" className="w-full ml-4"/>
             </div>
-            <div className="w-[30%]">
-              <label htmlFor="company">Company:</label>
-              <input type="text" name="company" id="company" />
-            </div>
-          </div>
-          <div className="flex flex-row bg-yellow-500 justify-around my-30 px-30">
-            <div className="w-[30%]">
-              <label htmlFor="number">Phone Number:</label>
-              <input type="number" name="number" id="number" required/>
-            </div>
-            <div className="w-[30%]">
-              <label htmlFor="email">Email:</label>
-              <input type="email" name="email" id="email" required/>
+            <div className="flex w-[40%] border-b-2">
+              <Icon icon="ic:baseline-business" width={24} height={24} />
+              <input type="text" name="company" id="company" placeholder="Company" className="w-full ml-4"/>
             </div>
           </div>
-          <div>
-            <label htmlFor="subject">Subject</label>
-            <input type="text" name="subject" id="subject" required/>
+          <div className="flex flex-col lg:flex-row justify-between my-10 w-[65%]">
+            <div className="flex w-[40%] border-b-2">
+              <Icon icon="solar:phone-bold" width={24} height={24} />
+              <input type="text" name="number" id="number" required placeholder="Phone Number" className="w-full ml-4"/>
+            </div>
+            <div className="flex w-[40%] border-b-2">
+              <Icon icon="ic:round-email" width={24} height={24} />
+              <input type="email" name="email" id="email" required placeholder="Email" className="w-full ml-4"/>
+            </div>
           </div>
-          <div>
-            <label htmlFor="message">Message</label>
-            <input type="text" name="message" id="message" required/>
+          <div className="flex my-10 w-[65%] border-b-2">
+            <Icon icon="lucide:notebook-pen" width={24} height={24} />
+            <input type="text" name="subject" id="subject" required placeholder="Subject" className="w-full ml-4"/>
           </div>
+          <div className="flex w-[65%] border-b-2">
+            <Icon icon="solar:pen-bold" width={24} height={24} />
+            <textarea name="message" id="message" required placeholder="Message" className="w-full ml-4"></textarea>
+          </div>
+          <button type="submit" className="w-[250px] bg-[#e46c0a] my-10 text-white py-2 rounded-md">Submit</button>
         </form>
       </div>
     </>
