@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <ChooseUs />
       <Projects />
       <Clients />
