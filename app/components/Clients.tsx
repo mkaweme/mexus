@@ -8,8 +8,13 @@ import MBZC from "@/public/assets/mbz.png";
 const Clients = () => {
   return (
     <>
-      <div className="flex flex-col items-center my-10">
+      <div className="flex flex-col items-center my-4">
         <h1 className="text-[48px] font-bold text-[#e46c0a]">Our Clients</h1>
+        <p className="w-1/3 bg-black text-white font-medium text-center p-4 rounded">
+          “Mexus Industrial Solutions Limited is committed to  putting it’s clients 
+          first and to promoting long-term relationships within the Private and Public 
+          sectors.”
+        </p>
         <div className="flex flex-row w-full gap-x-8 items-center justify-center">
           <div className="flex flex-col items-center">
             <Image src={NFCA} alt="nfca" className="w-[150px] h-auto object-contain" />
