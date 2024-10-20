@@ -21,6 +21,7 @@ const NAVLINKS: Navlink[] = [
 const Navbar = () => {
 
   const pathname = usePathname();
+  
   return (
     <nav className="flex flex-col justify-between w-full bg-[#131949] shadow top-0 fixed z-20">
       <div className="flex flex-row h-20 mx-10 justify-between">
@@ -35,7 +36,7 @@ const Navbar = () => {
             {NAVLINKS.map((navlink) => {
               const isActive = pathname.endsWith(navlink.link);
               return (
-                <li key={navlink.title} className="flex mx-10 align-text-bottom items-end">
+                <li key={navlink.title} className="flex mx-8 align-text-bottom items-end">
                   <Link href={navlink.link} className={isActive ? "flex font-bold h-full px-1 pb-3 items-center text-[#F39224] border-b-4  border-[#F39224]" : "pb-3 hover:text-[#F39224]"}>{navlink.title}</Link>
                 </li>)
             })}
