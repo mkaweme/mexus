@@ -1,5 +1,5 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 import Maintenance from "@/public/assets/maintenance.jpg";
 import Bolts from "@/public/assets/bolts.jpg";
 import Lubricant from "@/public/assets/lubricant.jpg";
