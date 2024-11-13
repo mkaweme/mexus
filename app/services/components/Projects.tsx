@@ -58,6 +58,18 @@ const Projects = () => {
           {images.map((image, index) => (
             <div
               key={index}
+              className={`absolute w-full h-auto transition-opacity duration-1000 ease-in-out z-10 ${
+                index === currentImage ? "fade-in" : "opacity-0"
+              }`}
+            >
+              <div className="w-full font-bold my-3 p-2 text-center">
+                <h2 className="text-lg">{image.title}</h2>
+              </div>
+            </div>
+          ))}
+          {images.map((image, index) => (
+            <div
+              key={index}
               className={`absolute top-0 left-0 w-1/2 h-auto transition-opacity duration-1000 ease-in-out z-10 ${
                 index === currentImage ? "fade-in" : "opacity-0"
               }`}
@@ -69,9 +81,6 @@ const Projects = () => {
                 height={500}
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute bottom-0 left-0 w-full font-bold my-3 p-2 text-center">
-                <h2 className="text-lg">{image.title}</h2>
-              </div>
             </div>
           ))}
           {images2.map((image, index) => (
@@ -93,7 +102,23 @@ const Projects = () => {
           {images3.map((image, index) => (
             <div
               key={index}
-              className={`absolute -bottom-1/2 left-0 w-1/2 h-auto transition-opacity duration-1000 ease-in-out z-10 ${
+              className={`absolute bottom-[-450px] left-0 w-1/2 h-auto transition-opacity duration-1000 ease-in-out z-10 ${
+                index === currentImage ? "fade-in" : "opacity-0"
+              }`}
+            >
+              <Image
+                src={image.src}
+                alt={image.title}
+                width={500}
+                height={500}
+                className="w-full h-auto object-cover"
+              />
+            </div>
+          ))}
+          {images4.map((image, index) => (
+            <div
+              key={index}
+              className={`absolute bottom-[-450px] right-0 w-1/2 h-auto transition-opacity duration-1000 ease-in-out z-10 ${
                 index === currentImage ? "fade-in" : "opacity-0"
               }`}
             >
