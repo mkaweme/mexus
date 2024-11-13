@@ -3,7 +3,7 @@ import Image from "next/image";
 import NFCA from "@/public/assets/nfca.png";
 import BAT from "@/public/assets/batz.webp";
 import Hudtech from "@/public/assets/hudtech.png";
-import RITC from "@/public/assets/ritc_2.png";
+import RITC from "@/public/assets/ritc.png";
 import MBZC from "@/public/assets/mbz.png";
 
 const Clients = () => {
