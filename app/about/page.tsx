@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
       photo: require("@/public/assets/caesar.jpeg"),
       title: "Managing Director",
       name: "Caesar Chellah",
-      body: `Caesar is a managing director and has been serving as 
+      body: `Caesar is the managing director and has been serving as 
       managing director from inception. With over 8 years experince in 
       the field, Caesar holds a Bachelor's Degree in Mechanical Engineering 
       obtained from the University of Zambia and is a registered engineer.`,
@@ -40,11 +41,11 @@ const About = () => {
   ];
 
   return (
-    <div className="flex flex-col mt-32 items-center"> 
+    <div className="flex flex-col items-center"> 
       <p className="text-[48px] font-bold text-[#e46c0a] my-10">
         <span className="text-black border-b-4 border-[#e46c0a]">About</span> Us
       </p>   
-      <p className="mx-16">We are a mechanical engineering company dedicated to delivering 
+      <p className="mx-6 lg:mx-16">We are a mechanical engineering company dedicated to delivering 
         quality and timely solutions that meet every client’s particular needs. Our success 
         lies in the innovation we bring to every project - whether it is a simple repair 
         job or full-scale turnkey project. We are always up to the challenge of 
@@ -53,7 +54,7 @@ const About = () => {
         machinery maintenance and repair, equipment supply and installation, we are 
         fully equipped to handle projects of any scale.
       </p>
-      <p className="mx-16">At Mexus Industrial Solutions, we understand the need for excellent 
+      <p className="mx-6 lg:mx-16 mt-3">At Mexus Industrial Solutions, we understand the need for excellent 
         plant reliability and operational uptime. In addition to our effective maintenance 
         strategies, we are dedicated to providing high quality, durable and reliable equipment 
         and spare parts on time. As a trusted supplier of industrial equipment and spares, you 
@@ -93,10 +94,10 @@ const About = () => {
       <p className="text-[48px] font-bold text-[#e46c0a] my-10">
         <span className="text-black border-b-4 border-[#e46c0a]">Our</span> Team
       </p>
-      <div className="flex flex-col lg:[&>*:nth-child(even)]:flex-row-reverse">
+      <div className="flex flex-col lg:[&>*:nth-child(even)]:flex-row-reverse mx-16">
         {teammembers.map((item, index) => {
           return(
-          <div key={index} className="flex rounded-xl p-4 pt-8 m-5 lg:w-[90%] items-center">
+          <div key={index} className="flex rounded-xl pt-8 m-5 lg:w-[90%] items-center">
             <div className="flex flex-col items-center">
               <Image alt="pic" src={item.photo} className="self-center lg:w-[900px] mb-4 rounded-lg"/>
               <p className="font-bold text-[16px]">{item.name}</p>
