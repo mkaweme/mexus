@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <a href="https://mexus.vercel.app/">
+    <img src="https://github.com/mkaweme/mexus/blob/master/app/icon.png"
+      width="60" height="60" alt="Mexus icon">
+  </a>
+</div>
+<h1 align="center">Mexus Industrial Solutions</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/kaweme" target="_blank">
+    <img alt="Twitter: kaweme" src="https://img.shields.io/twitter/follow/kaweme.svg?style=social" />
+  </a>
+</p>
 
-## Getting Started
+> This is a web application for Mexus Industrial Solutions, an engineering firm that is involved in mechanical and electrical engineering contracting, installation and  
+maintenance of plant and machinery, and engineering supplying
 
-First, run the development server:
+## Services
+Mechanical Maintenance
+Electrical Maintenance
+Plant and machinery installation
+Engineering supplying
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+### 🏠 [Homepage](https://mexus.vercel.app/)
+
+### ✨ [Demo](https://mexus.vercel.app/)
+
+## Install
+
+```sh
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Author
 
-## Learn More
+👤 **Makoba Kaweme**
 
-To learn more about Next.js, take a look at the following resources:
+* Twitter: [@kaweme](https://twitter.com/kaweme)
+* Github: [@mkaweme](https://github.com/mkaweme)
+* LinkedIn: [@makoba\_kaweme](https://linkedin.com/in/makoba-kaweme-1b095845)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Show your support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Give a ⭐️ if this project is okay!
 
-## Deploy on Vercel
+## Feedback
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I'm a new dev who's very open to feedback to give any feedback you think would make the project better.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
