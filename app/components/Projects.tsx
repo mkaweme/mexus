@@ -29,13 +29,13 @@ const Projects = () => {
         setCurrentImage((prev) => (prev + 1) % PROJECTS.length);
         setFade("fade-in");
       }, 1000);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   });
 
   return (
     <>
-      <div className="relative flex flex-col w-full h-screen items-center align-middle">
+      <div className="relative flex flex-col w-full h-screen items-center align-middle bg-pink-500">
         <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-10"><span className="text-black border-b-4 border-black">OUR</span> PROJECTS</h1>
         <div className="relative flex flex-col-reverse w-[250px] lg:w-[550px] h-auto mx-20 my-8 z-0">
           {PROJECTS.map((image, index) => (
@@ -50,7 +50,7 @@ const Projects = () => {
                 alt={image.title}
                 width={500}
                 height={500}
-                className="w-full h-auto object-cover"
+                className={`w-full h-auto object-cover ${fade}`}
               />
               <div className="absolute w-full font-bold my-6 lg:my-3 p-2 text-center">
                 <h2 className="text-lg">{image.title}</h2>
