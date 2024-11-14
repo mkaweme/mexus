@@ -50,7 +50,7 @@ const ChooseUs = () => {
             </div>
           </div>
           <div className="flex justify-center my-6">
-            <Image src="/assets/choose_us_2.jpg" width={328} height={508} alt="Choose Us" />
+            <Image src="/assets/choose_us.jpg" width={328} height={508} alt="Choose Us w-full h-auto" />
           </div>
         </div>
       </div>
