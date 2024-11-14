@@ -12,7 +12,7 @@ const Footer = () => {
           <p className="text-white text-[12px]">2024</p>
         </div>
         <div className="flex flex-row w-[10%] justify-between items-center">
-          <a href="https://www.facebook.com/profile.php?id=100064060839577">
+          <a href="https://www.facebook.com/profile.php?id=100064060839577" aria-label="link to facebook">
             <Icon icon="ic:baseline-facebook" color="white" width={20} height={20}/>
           </a>
           <Icon icon="arcticons:x-twitter" color="white" width={20} height={20}/>
