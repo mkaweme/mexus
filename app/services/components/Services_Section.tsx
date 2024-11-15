@@ -1,59 +1,97 @@
 import React from "react";
 import Image from "next/image";
-import Maintenance from "@/public/assets/maintenance.jpg";
-import Bolts from "@/public/assets/bolts.jpg";
-import Lubricant from "@/public/assets/lubricant.jpg";
-import Couplings from "@/public/assets/couplings.jpg";
+import Metal_Fab from "@/public/assets/metal_fab_resized.jpg";
+import { Icon } from "@iconify/react";
 
-const Services_Section = () => {
+const Services_Section: React.FC = () => {
+
   return (
-    <>
-      <div className="mx-16 my-10">
-        <div className="flex flex-col align-middle justify-center items-center">
-          <h1 className="text-[48px] font-bold text-[#e46c0a]">Our Services</h1>
-          <p className="text-[24px]">We offer comprehensive and reliable mechanical and
-            and electrical engineering services to the manufacturing, 
-            mining, agriculture, civil and transport sectors.
-          </p>
-        </div>
-        <div>
-          <div className="flex flex-col lg:flex-row my-2">
-            <div className="flex flex-col">
-              <p className="text-[36px] my-3"> Our services include: </p>
-              <ul className="flex flex-col text-[20px] list-outside list-disc gap-4">
-                <li>Steel Fabrication: Structural steel, tanks, sheet metalwork etc.</li>
-                <li>Plant intallation and maintenance.</li>
-                <li>Plant shutdown maintenance</li>
-                <li>Mechanical survey, inspection and consultancy</li>
-                <li>Industrial equipment and spare parts supply</li>
-                <li>Pulley rubber lagging and belt splicing</li>
-                <li>Gearbox, cylinders and pump repair and overhaul</li>
-              </ul>
-            </div>
-            <Image src={Maintenance} alt="maintenance" className="rounded-full w-[450px] h-auto mx-32 border-8 border-[#e46c0a]"/>
+      <div className="overflow-hidden">
+        <div className="w-full h-[300px] lg:h-[400px] bg-[url('/assets/services_2.jpg')] bg-cover">
+          <div className="flex flex-col gap-y-10 justify-center items-center bg-[#1419499A] w-full h-full">
+            <h1 className="text-[36px] lg:text-[55px] font-bold text-[#F19221]"><span className="text-white">OUR</span> SERVICES</h1>
+            <p className="text-[16px] text-center w-[50%] text-white">We offer comprehensive and reliable mechanical and
+              and electrical engineering services to the manufacturing, 
+              mining, agriculture, civil and transport sectors.
+            </p>
           </div>
-          <div className="flex flex-col lg:flex-row my-4">
-            <div className="flex flex-col">
-              <p className="text-[36px] my-3">We supply mechanical consumables: </p>
-              <ul className="flex flex-col text-[20px] list-outside list-disc gap-4">
-                <li>Lubricants</li>
-                <li>Belts</li>
-                <li>Fasteners</li>
-                <li>Couplings</li>
-                <li>Bearings</li>
-                <li>Welding rods</li>
-              </ul>
-            </div>
-            <Image src={Bolts} alt="bolts" className="rounded-full w-96 h-auto border-8 border-[#e46c0a]"/>
-            <div className="relative -left-4">
-              <Image src={Lubricant} alt="lubrincant" className="rounded-full w-[200px] h-auto border-8 border-[#e46c0a]"/>
-              <Image src={Couplings} alt="coupling" className="rounded-full w-[200px] h-auto border-8 border-[#e46c0a]"/>
-            </div>
-
-          </div> 
         </div>
+        <div className="flex flex-col lg:flex-row lg:gap-x-14 my-24 z-0">
+          <div className="flex flex-col mx-24">
+            <p className="text-[36px] text-[#F19221] font-bold mb-10"><span className="text-black border-b-4 border-[#F19221]">OUR SERVICES</span> INCLUDE </p>
+            <ul className="flex flex-col text-[20px] gap-4">
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                Steel Fabrication: Structural steel, tanks, sheet metalwork etc.
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                Plant intallation and maintenance.
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                Plant shutdown maintenance
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                Industrial equipment and spare parts supply
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                Pulley rubber lagging and belt splicing
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                Gearbox, cylinders and pump repair and overhaul
+              </li>
+            </ul>
+          </div>
+          <div className="relative flex flex-row z-0">
+            <div className="absolute flex flex-row w-[130px] h-[150px] top-[260px] -left-[80px] items-center justify-center bg-white clip-hexagon z-20">
+              <div className="w-[110px] h-[130px] bg-[#F19221] clip-hexagon">
+              </div>
+            </div>
+            <div className="flex flex-row items-center justify-center align-middle w-[380px] h-[420px] clip-hexagon bg-white z-10">
+              <div className="flex flex-row items-center justify-center align-middle w-[360px] h-[400px] clip-hexagon">
+                <Image src={Metal_Fab} alt="maintenance" width={1620} height={1080} className="w-[360px] h-[400px]"/>
+              </div>
+            </div>
+            <div className="absolute flex flex-row w-[450px] h-[550px] left-[190px] top-16 items-center justify-center bg-[#F19221] clip-hexagon">
+            </div>
+          </div>
+        </div>
+        <div className="relative flex flex-col text-white bg-black">
+          <div className="flex flex-col m-24">
+            <p className="text-[36px] text-[#F19221] font-bold mb-10"><span className="text-white border-b-4 border-b-[#F19221]">WE SUPPLY</span> MECHANICAL CONSUMABLES</p>
+            <ul className="flex flex-col lg:flex-row text-[20px]  justify-between">
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                  Lubricants
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                  Belts
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                  Fasteners
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                  Couplings
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                  Bearings
+              </li>
+              <li className="flex flex-row">
+                <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
+                  Welding Rods
+              </li>
+            </ul>
+          </div>
+        </div> 
       </div>
-    </>
   );
 }
 
