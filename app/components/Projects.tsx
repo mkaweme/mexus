@@ -15,15 +15,15 @@ const PROJECTS: project[] = [
   { src: BAT1, title: "Installation of an Eye wash station" },
   { src: BAT3, title: "Repair of a Tobacco Feeder"  },
 ];
-const Projects = () => {
+const Projects: React.FC = () => {
 
   //Create state variables
-  const [currentImage, setCurrentImage] = useState(0);
-  const [fade, setFade] = useState("fade-in");
+  const [currentImage, setCurrentImage] = useState<number>(0);
+  const [fade, setFade] = useState<string>("fade-in");
 
   //Create a useEffect for running the function that changes the image
   useEffect(() => {
-    const interval = setInterval(() => {
+    const interval: NodeJS.Timeout = setInterval(() => {
       setFade("fade-out");
       setTimeout(() => {
         setCurrentImage((prev) => (prev + 1) % PROJECTS.length);
@@ -34,10 +34,9 @@ const Projects = () => {
   });
 
   return (
-    <>
-      <div className="relative flex flex-col w-full h-screen items-center align-middle bg-pink-500">
+      <div id="projects" className="relative flex flex-col w-full h-screen items-center align-middle">
         <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-10"><span className="text-black border-b-4 border-black">OUR</span> PROJECTS</h1>
-        <div className="relative flex flex-col-reverse w-[250px] lg:w-[550px] h-auto mx-20 my-8 z-0">
+        <div className="relative flex flex-col-reverse w-[250px] lg:w-[550px] h-auto LG:mx-20 my-8 z-0">
           {PROJECTS.map((image, index) => (
             <div
               key={index}
@@ -75,7 +74,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </>
   );
 }
 
