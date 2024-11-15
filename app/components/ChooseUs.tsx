@@ -2,10 +2,9 @@ import React from "react";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 
-const ChooseUs = () => {
+const ChooseUs: React.FC = () => {
 
   return (
-    <>
       <div className="flex flex-col items-center bg-black py-10 lg:py-20">
         <div className="flex flex-col lg:flex-row lg:mx-16 justify-around gap-x-40">
           <div className="flex flex-col text-white">
@@ -54,8 +53,7 @@ const ChooseUs = () => {
           </div>
         </div>
       </div>
-    </>
   );
-}
+};
 
 export default ChooseUs;
