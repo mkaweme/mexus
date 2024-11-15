@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 const Test = () => {
@@ -18,7 +19,7 @@ const Test = () => {
     <h2 className="mb-1 text-xl text-grey-darker font-normal">Custom Side Tables</h2>
     <div className="mb-6 text-xs tracking-wide uppercase text-grey">18 Lessons - 2:34 hrs total</div>
     <p className="text-grey-dark tracking-normal leading-normal mb-6">
-        Occupy McSweeney's roof party biodiesel letterpress asymmetrical. Sustainable brunch pug, put a bird on it tilde lumber sexual gluten-free banh mi chambray mumblecore pickled. Yr retro hashtag, pork belly drinking vinegar Blue Bottle disrupt butcher. Health goth small batch…
+        Occupy McSweeney&apos;s roof party biodiesel letterpress asymmetrical. Sustainable brunch pug, put a bird on it tilde lumber sexual gluten-free banh mi chambray mumblecore pickled. Yr retro hashtag, pork belly drinking vinegar Blue Bottle disrupt butcher. Health goth small batch…
     </p>
 
     <div className="w-full p-4 rounded bg-green hover:bg-green-light uppercase tracking-wide text-white text-center text-md antialiased cursor-pointer">
