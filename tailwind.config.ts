@@ -37,7 +37,13 @@ const config: Config = {
         "fade-in": "fade-in 1.5s ease-in-out",
         "fade-out": "fade-out 1.5s ease-in-out",
       },
+      fontFamily: {
+        poppins: "var(--font-poppins)",
+        futurastd: "var(--font-futurastd)",
+        futurastdbook: "var(--font-futurastdbook)",
+      },
     },
+
   },
   plugins: [
     function ({ addUtilities }: PluginAPI) {
