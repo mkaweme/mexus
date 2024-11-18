@@ -9,7 +9,7 @@ import MBZC from "@/public/assets/mbz.png";
 const Clients: React.FC = () => {
   return (
     <div className="flex flex-col items-center mb-16">
-      <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-4"><span className="text-black border-b-4 border-black">
+      <h1 className="text-[32px] lg:text-[40px] font-poppins font-bold text-[#F19221] my-4"><span className="text-black border-b-4 border-black">
         OUR</span> CLIENTS
       </h1>
       <div className="grid grid-cols-3 lg:flex flex-row w-full gap-x-3 my-10 items-center justify-between bg-[#EDEEEE] px-6 lg:px-32">
@@ -23,7 +23,7 @@ const Clients: React.FC = () => {
         <Image src={MBZC} alt="mbz" className="w-[150px] h-auto object-contain" />
         <p className="text-[14px] lg:text-[20px] font-bold w-[150px] text-center">NJATI FOOD SYSTEMS</p>
       </div>
-      <h1 className="text-[32px] lg:text-[40px] text-center font-bold text-[#F19221] my-4"><span className="text-black border-b-4 border-black">
+      <h1 className="text-[32px] lg:text-[40px] text-center font-poppins font-bold text-[#F19221] my-4"><span className="text-black border-b-4 border-black">
         CLIENT&apos;S</span> TESTIMONIALS
       </h1>
       <div className="w-[90%] lg:w-1/3 bg-black text-white">
