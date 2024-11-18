@@ -43,7 +43,7 @@ const About = () => {
   return (
     <div className="flex flex-col items-center"> 
       <p className="text-[48px] font-bold text-[#e46c0a] my-10">
-        <span className="text-black border-b-4 border-[#e46c0a]">About</span> Us
+        <span className="text-black font-poppins border-b-4 border-[#e46c0a]">About</span> Us
       </p>   
       <p className="mx-6 lg:mx-16">We are a mechanical engineering company dedicated to delivering 
         quality and timely solutions that meet every client’s particular needs. Our success 
