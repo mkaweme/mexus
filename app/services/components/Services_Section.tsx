@@ -9,7 +9,7 @@ const Services_Section: React.FC = () => {
       <div className="overflow-hidden">
         <div className="w-full h-[300px] lg:h-[400px] bg-[url('/assets/services_2.jpg')] bg-cover">
           <div className="flex flex-col gap-y-10 justify-center items-center bg-[#1419499A] w-full h-full">
-            <h1 className="text-[36px] lg:text-[55px] font-bold text-[#F19221]"><span className="text-white">OUR</span> SERVICES</h1>
+            <h1 className="text-[36px] lg:text-[55px] font-poppins font-bold text-[#F19221]"><span className="text-white">OUR</span> SERVICES</h1>
             <p className="text-[16px] text-center w-[50%] text-white">We offer comprehensive and reliable mechanical and
               and electrical engineering services to the manufacturing, 
               mining, agriculture, civil and transport sectors.
@@ -18,7 +18,7 @@ const Services_Section: React.FC = () => {
         </div>
         <div className="flex flex-col lg:flex-row lg:gap-x-14 my-24 z-0">
           <div className="flex flex-col mx-24">
-            <p className="text-[36px] text-[#F19221] font-bold mb-10"><span className="text-black border-b-4 border-[#F19221]">OUR SERVICES</span> INCLUDE </p>
+            <p className="text-[36px] text-[#F19221] font-poppins font-bold mb-10"><span className="text-black border-b-4 border-[#F19221]">OUR SERVICES</span> INCLUDE </p>
             <ul className="flex flex-col text-[20px] gap-4">
               <li className="flex flex-row">
                 <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
@@ -62,8 +62,8 @@ const Services_Section: React.FC = () => {
         </div>
         <div className="relative flex flex-col text-white bg-black">
           <div className="flex flex-col m-24">
-            <p className="text-[36px] text-[#F19221] font-bold mb-10"><span className="text-white border-b-4 border-b-[#F19221]">WE SUPPLY</span> MECHANICAL CONSUMABLES</p>
-            <ul className="flex flex-col lg:flex-row text-[20px]  justify-between">
+            <p className="text-[36px] text-[#F19221] font-poppins font-bold mb-10"><span className="text-white border-b-4 border-b-[#F19221]">WE SUPPLY</span> MECHANICAL CONSUMABLES</p>
+            <ul className="flex flex-col lg:flex-row text-[20px] justify-between">
               <li className="flex flex-row">
                 <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4"/>
                   Lubricants
