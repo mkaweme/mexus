@@ -6,9 +6,9 @@ import Footer from "./components/Footer";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({ 
-  subsets: ["latin"], 
-  weight: ["400","500","700"],
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
   variable: "--font-poppins",
 });
 
@@ -51,12 +51,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${FuturaStd.className} ${FuturaStdBook.className} ${poppins.variable} $antialiased`}>
+      <body className={ `${FuturaStd.className} ${FuturaStdBook.className} ${poppins.variable} $antialiased` }>
         <header className="sticky top-0 z-50">
           <Navbar />
         </header>
         <main>
-          {children} 
+          { children }
         </main>
         <Footer />
       </body>
