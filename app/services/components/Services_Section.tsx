@@ -18,7 +18,7 @@ const Services_Section: React.FC = () => {
       </div>
       <div className="flex flex-col lg:flex-row lg:gap-x-14 my-6 lg:my-24 z-0">
         <div className="flex flex-col mx-3 lg:mx-24">
-          <p className="text-[30px] text-center lg:text-start lg:text-[36px] text-[#F19221] font-poppins font-bold mb-10"><span className="text-black border-b-4 border-[#F19221]">OUR SERVICES</span> INCLUDE </p>
+          <p className="text-[30px] lg:text-[36px] text-center lg:text-start  text-[#F19221] font-poppins font-bold mb-10"><span className="text-black border-b-4 border-[#F19221]">OUR SERVICES</span> INCLUDE </p>
           <ul className="flex flex-col text-[20px] gap-4 mx-3 lg:mx-0">
             <li className="flex flex-row">
               <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4" />
@@ -61,11 +61,11 @@ const Services_Section: React.FC = () => {
         </div>
       </div>
       <div className="relative flex flex-col text-white bg-black">
-        <div className="flex flex-col m-24">
-          <p className="text-[36px] text-[#F19221] font-poppins font-bold mb-10"><span className="text-white border-b-4 border-b-[#F19221]">WE SUPPLY</span> MECHANICAL CONSUMABLES</p>
-          <ul className="flex flex-col lg:flex-row text-[20px] justify-between">
+        <div className="flex flex-col my-24 mx-6 lg:mx-24">
+          <p className="text-[28px] lg:text-[40px] text-[#F19221] font-poppins font-bold mb-10 "><span className="text-white border-b-4 border-b-[#F19221]">WE SUPPLY</span> MECHANICAL CONSUMABLES</p>
+          <ul className="flex flex-col lg:flex-row text-[20px] gap-y-3 justify-between">
             <li className="flex flex-row">
-              <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="mr-4" />
+              <Icon icon="material-symbols:hexagon" color="#F19221" className="mr-4 w-[30px] h-[30px]" />
               Lubricants
             </li>
             <li className="flex flex-row">
