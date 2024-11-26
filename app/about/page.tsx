@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Team from "@/public/assets/team.jpg";
-import Mission from "@/public/assets/mission_3.jpg";
+import Mission from "@/public/assets/mission.jpg";
+import { Icon } from "@iconify/react";
 
 const About = () => {
 
@@ -90,7 +91,7 @@ const About = () => {
           </div>
           <div className="flex flex-row items-center justify-center align-middle w-[380px] h-[420px] clip-hexagon bg-black z-10">
             <div className="flex flex-row items-center justify-center align-middle w-[360px] h-[400px] clip-hexagon">
-              <Image src={ Mission } alt="maintenance" width={ 535 } height={ 357 } className="w-[535px] h-[357px]" content="cover"/>
+              <Image src={ Mission } alt="maintenance" width={ 384 } height={ 384 } className="w-[500px] h-[500px] object-cover" />
             </div>
           </div>
           <div className="absolute flex flex-row w-[450px] h-[550px] left-[190px] top-16 items-center justify-center bg-[#F19221] clip-hexagon">
@@ -98,48 +99,84 @@ const About = () => {
         </div>
       </div>
       <div className="relative bg-white z-20">
-        <p className="text-[48px] font-bold text-[#e46c0a] my-10">
-          <span className="text-black border-b-4 border-[#e46c0a]">Core</span> Values
+        <p className="text-[48px] font-bold text-[#f19221] my-10 mx-16">
+          <span className="text-black font-poppins border-b-4 border-[#f19221]">Core</span> Values
         </p>
         <ul className="flex flex-col mx-6 lg:mx-16 gap-y-6 list-outside">
-          <li><span className="font-bold text-[#e46c0a]">Quality - </span> We are dedicated to providing the
-            highest quality services and products to our clients, ensuring we add value to their
-            investment. Our comprehensive, end-to-end engineering processes and systems provide
-            the means by which we can fulfil our commitments and deliver excellent services.
+          <li className="flex flex-row">
+            <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
+            <div className="flex flex-col">
+              <p className="font-poppins font-semibold text-[20px]">Quality</p>
+              <p>We are dedicated to providing the highest quality 
+                services and products to our clients, ensuring we 
+                add value to their investment. Our comprehensive, 
+                end-to-end engineering processes and systems provide
+                the means by which we can fulfil our commitments and 
+                deliver excellent services.
+              </p>
+            </div>
           </li>
-          <li><span className="font-bold text-[#e46c0a]">Value - </span> We treat our clients’ business as
-            our own by providing value for money and obtaining the most competitive pricing on the market.
+          <li className="flex flex-row">
+            <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
+            <div>
+              <p className="font-poppins font-semibold text-[20px]">Value</p>
+              <p>We treat our client&apos;s business as our own by 
+                providing value for money and obtaining the most
+                competitive pricing on the market.
+              </p>
+            </div>
           </li>
-          <li><span className="font-bold text-[#e46c0a]">Integrity - </span> We maintain transparency and
-            honesty in all our business dealings to ensure we build trust and long-term relationships with
-            our clients.
+          <li className="flex flex-row">
+            <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
+            <div>
+              <p className="font-poppins font-semibold text-[20px]">Integrity</p>
+              <p>We maintain transparency and honesty in all our
+                business dealings to ensure we build trust and 
+                long-term relationships with our clients.
+              </p>
+            </div>
           </li>
-          <li><span className="font-bold text-[#e46c0a]">Kaizen - </span> Any good idea can be made even
-            better! We are committed to continuous improvement in every aspect of our business and actively
-            promote teamwork to drive innovation and success.
+          <li className="flex flex-row">
+            <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
+            <div>
+              <p className="font-poppins font-semibold text-[20px]">Kaizen</p>
+              <p>Any good idea can be made even better! We are 
+                committed to continuous improvement in every 
+                aspect of our business and actively promote 
+                teamwork to drive innovation and success.
+              </p>
+            </div>
           </li>
-          <li><span className="font-bold text-[#e46c0a]">Innovation - </span> We aspire to continuously
-            provide our clients with improved, innovative and effective solutions.
+          <li className="flex flex-row">
+            <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
+            <div>
+              <p className="font-poppins font-semibold">Innovation</p>
+              <p>We aspire to continuously provide our clients 
+                with improved, innovative and effective solutions.
+              </p>
+            </div>
           </li>
         </ul>
       </div>
-      <p className="text-[48px] font-bold text-[#e46c0a] my-10">
-        <span className="text-black border-b-4 border-[#e46c0a]">Our</span> Team
-      </p>
-      <div className="flex flex-col lg:[&>*:nth-child(even)]:flex-row-reverse mx-16">
-        { teammembers.map((item, index) => {
-          return (
-            <div key={ index } className="flex rounded-xl pt-8 m-5 lg:w-[90%] items-center">
-              <div className="flex flex-col items-center">
-                <Image alt="pic" src={ item.photo } width={300} height={300} className="self-center lg:w-[900px] mb-4 rounded-lg" />
-                <p className="font-bold text-[16px]">{ item.name }</p>
-                <p className="font-bold text-[16px]">{ item.title }</p>
+      <div className="flex flex-col items-center bg-[#EDEEEE]">
+        <p className="text-[40px] font-poppins font-bold text-[#f19221] my-10">
+          <span className="text-black border-b-4 border-[#f19221]">Our</span> Team
+        </p>
+        <div className="flex flex-col lg:[&>*:nth-child(even)]:flex-row-reverse mx-16">
+          { teammembers.map((item, index) => {
+            return (
+              <div key={ index } className="flex rounded-xl pt-8 m-5 lg:w-[90%] items-center">
+                <div className="flex flex-col items-center">
+                  <Image alt="pic" src={ item.photo } width={300} height={300} className="self-center lg:w-[900px] mb-4 rounded-lg" />
+                  <p className="font-bold text-[16px]">{ item.name }</p>
+                  <p className="font-bold text-[16px]">{ item.title }</p>
+                </div>
+                <p className="text-[14px] mx-32">{ item.body }</p>
               </div>
-              <p className="text-[14px] mx-32">{ item.body }</p>
-            </div>
-          )
-        }) }
-      </div>
+            )
+          }) }
+          </div>
+        </div>
     </div>
   );
 };
