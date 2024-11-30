@@ -3,15 +3,18 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Contact = () => {
   return (
-    <> 
       <div className="flex flex-col">
-        <h1 className="text-[48px] font-bold text-[#e46c0a] self-center my-6">Contact us</h1>
-        <div className="mx-32 my-4">
-          <iframe title="map" className="lg:rounded-r-xl lg:w-[100%] lg:h-[500px] border-2 border-[#9999]" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2335.430857248559!2d28.32197236287934!3d-15.455932017194206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2szm!4v1728571368281!5m2!1sen!2szm"></iframe>
+        <div className="w-full h-[300px] lg:h-[400px] bg-[url('/assets/services_2.jpg')] bg-cover">
+          <div className="flex flex-col gap-y-10 justify-center items-center bg-[#1419499A] w-full h-full">
+            <h1 className="text-[36px] lg:text-[55px] font-poppins font-bold text-[#F19221]"><span className="text-white">CONTACT</span> US</h1>
+          </div>
         </div>
-        <div className="flex flex-col lg:flex-row mx-32 my-16 justify-between">
-          <div className="relative flex flex-col lg:w-[21%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm border-2 border-[#000000]">
-            <div className="absolute -top-1/4 bg-[#F39224] rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
+        <div className="lg:mx-24 lg:my-20">
+          <iframe title="map" className="lg:rounded-l lg:w-[100%] lg:h-[500px] border-2 border-[#9999]" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d602.3889042564481!2d28.329140360470543!3d-15.464554807087248!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-15.464502971684526!2d28.329268094060147!5e0!3m2!1sen!2szm!4v1732822010794!5m2!1sen!2szm"></iframe>
+        </div>
+        <div className="flex flex-col lg:flex-row mx-24 my-16 justify-between">
+          <div className="relative flex flex-col lg:w-[23%] text-[16px] text-white items-center justify-center bg-[#F19221] rounded-sm">
+            <div className="absolute -top-1/4 bg-black rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
               <Icon icon="mdi:location" width={40} height={40} />
             </div>
             <div className="flex flex-col items-center mt-10 mb-2">
@@ -20,8 +23,8 @@ const Contact = () => {
               <p>Libala South, Lusaka</p>
             </div>
           </div>
-          <div className="relative flex flex-col lg:w-[21%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm border-2 border-[#000000]">
-            <div className="absolute -top-[35px] bg-[#F39224] rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
+          <div className="relative flex flex-col lg:w-[23%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm">
+            <div className="absolute -top-[35px] bg-black rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
               <Icon icon="tabler:clock" width={40} height={40} />
             </div>
             <div className="flex flex-col items-center mt-10 mb-2">
@@ -31,8 +34,8 @@ const Contact = () => {
               <p>Sun: Closed</p>
             </div>
           </div>
-          <div className="relative flex flex-col lg:w-[21%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm border-2 border-[#000000]">
-            <div className="absolute -top-[35px] bg-[#F39224] rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
+          <div className="relative flex flex-col lg:w-[23%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm">
+            <div className="absolute -top-[35px] bg-black rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
               <Icon icon="solar:phone-bold" width={40} height={40} />
             </div>
             <div className="flex flex-col items-center mt-10 mb-2">
@@ -41,8 +44,8 @@ const Contact = () => {
               <p>+260968318036</p>
             </div>
           </div>
-          <div className="relative flex flex-col lg:w-[21%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm border-2 border-[#000000]">
-            <div className="absolute -top-[35px] bg-[#F39224] rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
+          <div className="relative flex flex-col lg:w-[23%] text-[16px] text-white items-center justify-center bg-[#F39224] rounded-sm">
+            <div className="absolute -top-[35px] bg-black rounded-full flex justify-center items-center border-2 border-[#000000] p-3">
               <Icon icon="ic:round-email" width={40} height={40} />
             </div>
             <h2>Email Us</h2>
@@ -84,7 +87,6 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </>
   );
 };
 
