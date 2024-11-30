@@ -8,7 +8,7 @@ import logo_2 from "@/public/assets/logo_mini.png";
 const Footer: React.FC = () => {
   return (
     <div className="flex flex-col bg-[#141949] px-6 lg:px-16 items-center">
-      <div className="flex flex-row pl-6 h-20 w-full">
+      <div className="flex flex-row lg:pl-6 h-20 mb-6 lg:mb-0 w-full">
         <Link href="/" className="flex flex-row items-center w-[27%] pl-1 md:pl-3">
           <Image alt="logo" src={ logo } className="hidden lg:flex m-1 w-auto h-10 rounded-lg" />
           <Image alt="logo" src={ logo_2 } className="flex lg:hidden m-1 w-[70px] h-auto rounded-lg object-contain" />
@@ -61,9 +61,9 @@ const Footer: React.FC = () => {
           <Link href="/about">About</Link>
           <Link href="/contact">Contact Us</Link>
         </div>
-        <div className="flex flex-col lg:w-[20%] gap-y-4">
-          <Link href="/services">Services</Link>
-          <Link href="/services#projects">Projects</Link>
+        <div className="flex flex-col lg:w-[20%] gap-y-4 my-3">
+          <Link href="/services">EIZ</Link>
+          <Link href="/services#projects">NCC</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact Us</Link>
         </div>
@@ -75,8 +75,8 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="flex flex-col w-full items-center mt-10">
-        <div className="w-full h-[1px] bg-[#FFFFFF23] my-4"></div>
-        <p className="flex text-white mt-4 mb-6 items-center">
+        <div className="w-full h-[1px] bg-[#FFFFFF23] my-3"></div>
+        <p className="flex text-[12px] text-white lg:mx-4 mb-3 items-center">
           Copyright
           <Icon icon="ic:round-copyright" color="white" width={ 14 } height={ 14 } className="mx-1" />
           2024 Mexus Industrial Solutions Ltd
