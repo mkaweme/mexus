@@ -1,47 +1,63 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import Team from "@/public/assets/team.jpg";
 import Mission from "@/public/assets/mission.jpg";
 import { Icon } from "@iconify/react";
 
-const About = () => {
+const TEAMMEMBERS = [
+  {
+    photo: "/assets/caesar.jpeg",
+    title: "Managing Director",
+    name: "Caesar Chellah",
+    body: `Caesar serves as the managing director. Caesar holds a Bachelor's 
+    Degree in Mechanical Engineering obtained from the University of Zambia, 
+    is a registered engineer and has over 8 years experince in the field.`,
+  },
+  {
+    photo: "/assets/makoba.jpg",
+    title: "Director - Mechanical",
+    name: "Makoba Kaweme",
+    body: `Makoba is the Director - Mechanical Services. With over 6 years 
+    experince in the field, Makoba holds a Bachelor's Degree in Mechanical 
+    Engineering obtained from the University of Zambia and is a registered 
+    engineer.`,
+  },
+  {
+    photo: "/assets/caesar.jpeg",
+    title: "Director - Electrical",
+    name: "Michael",
+    body: `Michael is the Director - Electrical Services. With over 14 years 
+    experince in the field, Michael holds a Diploma in Electrical Engineering
+    and is a registered technologist.`,
+  },
+  {
+    photo: "/assets/caesar.jpeg",
+    title: "Mechanical",
+    name: "Mofya",
+    body: `Mofya is the Director - Mechanical Services. With over 14 years 
+    experince in the field, Michael holds a Diploma in Mechanical 
+    Engineering and is a registered technologist.`,
+  }
+];
 
-  const teammembers = [
-    {
-      photo: "/assets/caesar.jpeg",
-      title: "Managing Director",
-      name: "Caesar Chellah",
-      body: `Caesar is the managing director and has been serving as 
-      managing director from inception. With over 8 years experince in 
-      the field, Caesar holds a Bachelor's Degree in Mechanical Engineering 
-      obtained from the University of Zambia and is a registered engineer.`,
-    },
-    {
-      photo: "/assets/makoba.jpg",
-      title: "Director - Mechanical",
-      name: "Makoba Kaweme",
-      body: `Makoba is the Director - Mechanical Services. With over 8 years 
-      experince in the field, Caesar holds a Bachelor's Degree in Mechanical 
-      Engineering obtained from the University of Zambia and is a registered 
-      engineer.`,
-    },
-    {
-      photo: "/assets/caesar.jpeg",
-      title: "Director - Electrical",
-      name: "Michael",
-      body: `Michael is the Director - Electrical Services. With over 14 years 
-      experince in the field, Michael holds a Diploma in Electrical Engineering
-      and is a registered technologist.`,
-    },
-    {
-      photo: "/assets/caesar.jpeg",
-      title: "Deputy Director - Mechanical",
-      name: "Mofya",
-      body: `Mofya is the Director - Mechanical Services. With over 14 years 
-      experince in the field, Michael holds a Diploma in Mechanical 
-      Engineering and is a registered technologist.`,
-    }
-  ];
+const About: React.FC = () => {
+
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  //Define a function that moves to the previous item
+  const prevItem = () => {
+    const isFirstItem: boolean = currentIndex === 0;
+    const newIndex: number = isFirstItem ? TEAMMEMBERS.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  }
+  
+  //Define a function that moves to the next item
+  const nextItem =() => {
+    const isLastItem: boolean = currentIndex === TEAMMEMBERS.length - 1;
+    const newIndex: number = isLastItem ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  } 
 
   return (
     <div className="flex flex-col items-center overflow-hidden">
@@ -50,7 +66,7 @@ const About = () => {
           <h1 className="text-[36px] lg:text-[55px] font-poppins font-bold text-[#F19221]"><span className="text-white">ABOUT</span> US</h1>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row bg-[url('/assets/team_background.png')] bg-cover py-20">
+      <div className="flex flex-col lg:flex-row items-center bg-[url('/assets/team_background.png')] bg-cover py-20">
         <div className="flex-1">
           <p className="mx-6 lg:mx-16">We are a mechanical engineering company dedicated to delivering
             quality and timely solutions that meet every client’s particular needs. Our success
@@ -68,15 +84,15 @@ const About = () => {
             can rely on us as a dependable partner for all your operational needs.
           </p>
         </div>
-        <div className="relative flex flex-row flex-1">
+        <div className="relative flex flex-row flex-1 mt-10">
           <div className="absolute w-[40%] h-4 bg-[#F19221]"></div>
-          <Image src={ Team } alt="team" width={527} height={405} className="rounded w-[300px] lg:w-[527px] h-auto" />
-          <div className="absolute w-[40%] h-4 top-[334px] left-[130px] bg-[#F19221]"></div>
+          <Image src={ Team } alt="team" width={527} height={405} className="rounded w-[350px] md:w-[450px] lg:w-[527px] h-auto" />
+          <div className="absolute w-[40%] h-4 top-[217px] md:top-[283px] lg:top-[334px] left-[105px] md:left-[135px] lg:left-[130px] bg-[#F19221]"></div>
         </div>
       </div>
-      <div className="flex flex-row w-full h-[400px] text-white bg-black">
-        <div className="flex flex-col items-center flex-1 my-10 mx-10">
-          <p className="text-[48px] font-poppins font-bold text-[#F19221] bg-cover text-center my-10">
+      <div className="flex flex-col lg:flex-row w-full lg:h-[400px] text-white bg-black">
+        <div className="flex flex-col items-center flex-1 my-10 mx-4 lg:mx-10">
+          <p className="text-[36px] lg:text-[48px] font-poppins font-bold text-[#F19221] bg-cover text-center mb-10 lg:mt-10">
             <span className="text-white border-b-4 border-[#F19221]">Our</span> Mission
           </p>
           <p className="text-center">Our mission is to deliver timely and cost-effective solutions to our
@@ -98,8 +114,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="relative bg-white z-20">
-        <p className="text-[48px] font-bold text-[#f19221] my-10 mx-16">
+      <div className="relative bg-white z-20 py-10">
+        <p className="text-[36px] lg:text-[48px] font-poppins font-bold text-[#f19221] mb-10 mx-16">
           <span className="text-black font-poppins border-b-4 border-[#f19221]">Core</span> Values
         </p>
         <ul className="flex flex-col mx-6 lg:mx-16 gap-y-6 list-outside">
@@ -158,25 +174,39 @@ const About = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col items-center bg-[#EDEEEE]">
-        <p className="text-[40px] font-poppins font-bold text-[#f19221] my-10">
+      <div className="flex flex-col items-center bg-[#EDEEEE] w-full">
+        <p className="text-[40px] font-poppins font-bold text-[#f19221] mt-16">
           <span className="text-black border-b-4 border-[#f19221]">Our</span> Team
         </p>
-        <div className="flex flex-col lg:[&>*:nth-child(even)]:flex-row-reverse mx-16">
-          { teammembers.map((item, index) => {
-            return (
-              <div key={ index } className="flex rounded-xl pt-8 m-5 lg:w-[90%] items-center">
-                <div className="flex flex-col items-center">
-                  <Image alt="pic" src={ item.photo } width={300} height={300} className="self-center lg:w-[900px] mb-4 rounded-lg" />
-                  <p className="font-bold text-[16px]">{ item.name }</p>
-                  <p className="font-bold text-[16px]">{ item.title }</p>
-                </div>
-                <p className="text-[14px] mx-32">{ item.body }</p>
-              </div>
-            )
-          }) }
+        <div className="flex flex-col mx-6 lg:mx-20 mb-20">
+          <div className="flex flex-row gap-x-6 my-4 self-end">
+            <button className="bg-[#F19221] rounded-full" aria-label="previous image" type="button" onClick={() => prevItem()}>
+              <Icon icon="iconamoon:arrow-left-2-light" width="24" height="24" />
+            </button>
+            <button className="bg-[#F19221] rounded-full" aria-label="next image" type="button" onClick={ () => nextItem()}>
+              <Icon icon="iconamoon:arrow-right-2-light" width="24" height="24" />
+            </button>
+          </div>
+          <div className="flex lg:flex-row gap-x-6 bg-green-400 justify-center items-center align-middle transition-all">
+            {
+              TEAMMEMBERS.map((item, index) => {
+                return (
+                  <div key={ index } className={ index === currentIndex ? "flex flex-col-reverse lg:flex-row lg:w-[446px] gap-x-4" : "hidden lg:flex flex-row lg:w-[200px] gap-x-4"}>
+                    <p className={ index === currentIndex ? "flex flex-col lg:w-[230px] bg-black text-white rounded-sm p-4" : "hidden"}>
+                      {item.body}
+                    </p>
+                    <div className="flex flex-col lg:w-[200px] text-white font-poppins bg-black rounded-sm p-4">
+                      <Image alt="pic" src={ item.photo } width={300} height={300} className="self-center w-full lg:w-[250px] h-auto mb-4 rounded-sm" />
+                      <p className="font-semibold text-[16px]">{ item.name }</p>
+                      <p className="italic text-[14px]">{ item.title }</p>
+                    </div>
+                  </div>
+                )
+              })
+            }
           </div>
         </div>
+      </div>
     </div>
   );
 };
