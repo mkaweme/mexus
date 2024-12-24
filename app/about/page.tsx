@@ -24,7 +24,7 @@ const TEAMMEMBERS = [
     engineer.`,
   },
   {
-    photo: "/assets/caesar.jpeg",
+    photo: "",
     title: "Director - Electrical",
     name: "Michael",
     body: `Michael is the Director - Electrical Services. With over 14 years 
@@ -32,7 +32,7 @@ const TEAMMEMBERS = [
     and is a registered technologist.`,
   },
   {
-    photo: "/assets/caesar.jpeg",
+    photo: "",
     title: "Mechanical",
     name: "Mofya",
     body: `Mofya is the Director - Mechanical Services. With over 14 years 
@@ -51,13 +51,13 @@ const About: React.FC = () => {
     const newIndex: number = isFirstItem ? TEAMMEMBERS.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   }
-  
+
   //Define a function that moves to the next item
-  const nextItem =() => {
+  const nextItem = () => {
     const isLastItem: boolean = currentIndex === TEAMMEMBERS.length - 1;
     const newIndex: number = isLastItem ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  } 
+  }
 
   return (
     <div className="flex flex-col items-center overflow-hidden">
@@ -86,7 +86,7 @@ const About: React.FC = () => {
         </div>
         <div className="relative flex flex-row flex-1 mt-10">
           <div className="absolute w-[40%] h-4 bg-[#F19221]"></div>
-          <Image src={ Team } alt="team" width={527} height={405} className="rounded w-[350px] md:w-[450px] lg:w-[527px] h-auto" />
+          <Image src={ Team } alt="team" width={ 527 } height={ 405 } className="rounded w-[350px] md:w-[450px] lg:w-[527px] h-auto" />
           <div className="absolute w-[40%] h-4 top-[217px] md:top-[283px] lg:top-[334px] left-[105px] md:left-[135px] lg:left-[130px] bg-[#F19221]"></div>
         </div>
       </div>
@@ -123,11 +123,11 @@ const About: React.FC = () => {
             <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
             <div className="flex flex-col">
               <p className="font-poppins font-semibold text-[20px]">Quality</p>
-              <p>We are dedicated to providing the highest quality 
-                services and products to our clients, ensuring we 
-                add value to their investment. Our comprehensive, 
+              <p>We are dedicated to providing the highest quality
+                services and products to our clients, ensuring we
+                add value to their investment. Our comprehensive,
                 end-to-end engineering processes and systems provide
-                the means by which we can fulfil our commitments and 
+                the means by which we can fulfil our commitments and
                 deliver excellent services.
               </p>
             </div>
@@ -136,7 +136,7 @@ const About: React.FC = () => {
             <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
             <div>
               <p className="font-poppins font-semibold text-[20px]">Value</p>
-              <p>We treat our client&apos;s business as our own by 
+              <p>We treat our client&apos;s business as our own by
                 providing value for money and obtaining the most
                 competitive pricing on the market.
               </p>
@@ -147,7 +147,7 @@ const About: React.FC = () => {
             <div>
               <p className="font-poppins font-semibold text-[20px]">Integrity</p>
               <p>We maintain transparency and honesty in all our
-                business dealings to ensure we build trust and 
+                business dealings to ensure we build trust and
                 long-term relationships with our clients.
               </p>
             </div>
@@ -156,9 +156,9 @@ const About: React.FC = () => {
             <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
             <div>
               <p className="font-poppins font-semibold text-[20px]">Kaizen</p>
-              <p>Any good idea can be made even better! We are 
-                committed to continuous improvement in every 
-                aspect of our business and actively promote 
+              <p>Any good idea can be made even better! We are
+                committed to continuous improvement in every
+                aspect of our business and actively promote
                 teamwork to drive innovation and success.
               </p>
             </div>
@@ -167,7 +167,7 @@ const About: React.FC = () => {
             <Icon icon="material-symbols:hexagon" width="30" height="30" color="#F19221" className="flex flex-row mr-4" />
             <div>
               <p className="font-poppins font-semibold">Innovation</p>
-              <p>We aspire to continuously provide our clients 
+              <p>We aspire to continuously provide our clients
                 with improved, innovative and effective solutions.
               </p>
             </div>
@@ -180,23 +180,23 @@ const About: React.FC = () => {
         </p>
         <div className="flex flex-col mx-6 lg:mx-20 mb-20">
           <div className="flex flex-row gap-x-6 my-4 self-end">
-            <button className="bg-[#F19221] rounded-full" aria-label="previous image" type="button" onClick={() => prevItem()}>
+            <button className="bg-[#F19221] rounded-full" aria-label="previous image" type="button" onClick={ () => prevItem() }>
               <Icon icon="iconamoon:arrow-left-2-light" width="24" height="24" />
             </button>
-            <button className="bg-[#F19221] rounded-full" aria-label="next image" type="button" onClick={ () => nextItem()}>
+            <button className="bg-[#F19221] rounded-full" aria-label="next image" type="button" onClick={ () => nextItem() }>
               <Icon icon="iconamoon:arrow-right-2-light" width="24" height="24" />
             </button>
           </div>
-          <div className="flex lg:flex-row gap-x-6 bg-green-400 justify-center items-center align-middle transition-all">
+          <div className="flex lg:flex-row gap-x-6 justify-center items-center align-middle transition-all">
             {
               TEAMMEMBERS.map((item, index) => {
                 return (
-                  <div key={ index } className={ index === currentIndex ? "flex flex-col-reverse lg:flex-row lg:w-[446px] gap-x-4" : "hidden lg:flex flex-row lg:w-[200px] gap-x-4"}>
-                    <p className={ index === currentIndex ? "flex flex-col lg:w-[230px] bg-black text-white rounded-sm p-4" : "hidden"}>
-                      {item.body}
+                  <div key={ index } className={ index === currentIndex ? "flex flex-col-reverse lg:flex-row lg:w-[446px] gap-x-4" : "hidden lg:flex flex-row lg:w-[200px] gap-x-4" }>
+                    <p className={ index === currentIndex ? "flex flex-col lg:w-[230px] bg-black text-white rounded-sm p-4" : "hidden" }>
+                      { item.body }
                     </p>
                     <div className="flex flex-col lg:w-[200px] text-white font-poppins bg-black rounded-sm p-4">
-                      <Image alt="pic" src={ item.photo } width={300} height={300} className="self-center w-full lg:w-[250px] h-auto mb-4 rounded-sm" />
+                      { item.photo ? <Image alt="pic" src={ item.photo } width={ 300 } height={ 300 } className="self-center w-full lg:w-[250px] h-auto mb-4 rounded-sm" /> : <Icon icon="lsicon:user-filled" width="184" height="184" className="self-center" /> }
                       <p className="font-semibold text-[16px]">{ item.name }</p>
                       <p className="italic text-[14px]">{ item.title }</p>
                     </div>
