@@ -6,7 +6,7 @@ const SHE = () => {
   return (
     <div className="relative flex flex-col w-full">
       <div className="relative flex flex-col items-center bg-[#EDEEEE] overflow-hidden py-10 lg:py-0">
-        <h1 className="text-[30px] lg:text-[40px] font-poppins font-bold text-[#F19221] text-center lg:text-startmy-10"><span className="text-black border-b-4 border-[#F19221]">SAFETY, HEALTH</span> &ENVIRONMENT</h1>
+        <h1 className="text-[30px] lg:text-[40px] font-poppins font-bold text-[#F19221] text-center lg:text-start my-10"><span className="text-black border-b-4 border-[#F19221]">SAFETY, HEALTH</span> &ENVIRONMENT</h1>
         <div className="relative flex flex-row">
           <div className="absolute w-[40%] h-4 bg-[#F19221]"></div>
           <Image src={ PPE } alt="ppe" className="rounded w-[350px] lg:w-[700px] h-auto" />
