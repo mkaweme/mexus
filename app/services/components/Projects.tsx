@@ -69,14 +69,14 @@ const PROJECTS: Project[] = [
 const Projects: React.FC = () => {
 
   return (
-    <div className="flex flex-col w-full items-center align-middle">
+    <div id="projects" className="flex flex-col w-full items-center align-middle">
       <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-6 lg:my-10"><span className="text-black border-b-4 border-[#F19221]">OUR</span> PROJECTS</h1>
       <div className="flex flex-col lg:[&>*:nth-child(even)]:flex-row-reverse mx-24">
         {
           PROJECTS.map((project, index) => {
             const [currentIndex, setCurrentIndex] = useState<number>(0);
             return (
-              <div key={ index } className="flex flex-col lg:flex-row my-4 lg:my-10 gap-x-12">
+              <div key={ index } className="flex flex-col lg:flex-row my-4 lg:my-16 gap-x-12">
                 <div className="flex flex-col flex-1 lg:py-20">
                   <h2 className="text-poppins text-[20px] font-semibold text-center">{ project.title }</h2>
                   <p className="my-4 lg:my-10 font-light">{ project.description }</p>
