@@ -14,13 +14,16 @@ const Footer: React.FC = () => {
           <Image alt="logo" src={ logo_2 } className="flex lg:hidden m-1 w-[70px] h-auto rounded-lg object-contain" />
         </Link>
       </div>
-      <div className="flex flex-col lg:flex-row lg:pl-10 text-white w-full">
+      <div className="flex flex-col lg:flex-row lg:pl-10 justify-between text-white w-full">
         <div className="flex flex-col lg:w-[40%] gap-y-6">
           <div className="flex items-center">
             <div className="flex items-center justify-center bg-[#FFFFFF23] w-9 h-9 rounded-sm">
               <Icon icon="solar:phone-bold" width={ 24 } height={ 24 } color="white" />
             </div>
-            <p className="ml-4">+260962352132</p>
+            <div className="ml-4">
+              <p>+260 962 352132</p>
+              <p>+260 968 318036</p>
+            </div>
           </div>
           <div className="flex items-center">
             <div className="flex items-center justify-center bg-[#FFFFFF23] w-9 h-9 rounded-sm">
@@ -31,12 +34,12 @@ const Footer: React.FC = () => {
               <p>Plot 4097, Chibote Rd, Industrial Area, Luanshya</p>
             </div>
           </div>
-          <div className="flex items-center">
+          <a className="flex items-center">
             <div className="flex items-center justify-center bg-[#FFFFFF23] w-9 h-9 rounded-sm">
               <Icon icon="mdi:email-outline" width={ 24 } height={ 24 } color="white" />
             </div>
             <p className="ml-4">info@mexus.co.zm</p>
-          </div>
+          </a>
           <div className="flex items-center">
             <p className="text-[20px] font-poppins font-bold">Social Media:</p>
             <div className="flex flex-row gap-x-6 mx-3 lg:mx-6">
@@ -55,23 +58,15 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col lg:w-[20%] gap-y-4 my-3">
+        <div className="flex flex-col lg:w-[25%] gap-y-4 my-3">
           <Link href="/services">Services</Link>
           <Link href="/services#projects">Projects</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact Us</Link>
         </div>
-        <div className="flex flex-col lg:w-[20%] gap-y-4 my-3">
-          <Link href="/services">EIZ</Link>
-          <Link href="/services#projects">NCC</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact Us</Link>
-        </div>
-        <div className="flex flex-col lg:w-[20%] gap-y-4 my-3">
-          <Link href="/services">Services</Link>
-          <Link href="/services#projects">Projects</Link>
-          <Link href="/about">About</Link>
-          <Link href="/contact">Contact Us</Link>
+        <div className="flex flex-col lg:w-[25%] gap-y-4 my-3">
+          <a href="https://www.eiz.org.zm/" aria-label="link to eiz">EIZ</a>
+          <a href="https://www.ncc.org.zm/" aria-label="link to ncc">NCC</a>
         </div>
       </div>
       <div className="flex flex-col w-full items-center mt-10">
