@@ -8,10 +8,10 @@ import logo_2 from "@/public/assets/logo_mini.png";
 const Footer: React.FC = () => {
   return (
     <div className="flex flex-col bg-[#141949] px-6 lg:px-16 items-center">
-      <div className="flex flex-row lg:pl-6 h-20 mb-6 lg:mb-0 w-full">
-        <Link href="/" className="flex flex-row items-center w-[27%] pl-1 md:pl-3">
+      <div className="flex flex-row lg:pl-6 h-20 my-6 lg:mb-0 w-full">
+        <Link href="/" className="flex flex-row items-center w-[27%] lg:pl-1 md:pl-3">
           <Image alt="logo" src={ logo } className="hidden lg:flex m-1 w-auto h-10 rounded-lg" />
-          <Image alt="logo" src={ logo_2 } className="flex lg:hidden m-1 w-[70px] h-auto rounded-lg object-contain" />
+          <Image alt="logo" src={ logo_2 } className="flex lg:hidden w-[70px] h-auto rounded-lg object-contain" />
         </Link>
       </div>
       <div className="flex flex-col lg:flex-row lg:pl-10 justify-between text-white w-full">
@@ -40,9 +40,9 @@ const Footer: React.FC = () => {
             </div>
             <p className="ml-4">info@mexus.co.zm</p>
           </a>
-          <div className="flex items-center">
+          <div className="flex flex-col lg:flex-row">
             <p className="text-[20px] font-poppins font-bold">Social Media:</p>
-            <div className="flex flex-row gap-x-6 mx-3 lg:mx-6">
+            <div className="flex flex-row gap-x-6 my-3 lg:my-0 lg:mx-6">
               <a href="https://www.facebook.com/profile.php?id=100064060839577" aria-label="link to facebook" className="flex w-8 h-8 items-center justify-center bg-[#FFFFFF23] rounded-sm">
                 <Icon icon="iconoir:facebook" color="white" width={ 22 } height={ 22 } />
               </a>
