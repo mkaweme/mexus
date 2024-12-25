@@ -12,7 +12,7 @@ const SHE = () => {
           <Image src={ PPE } alt="ppe" className="rounded w-[350px] lg:w-[700px] h-auto" />
           <div className="absolute w-[60%] h-4 top-[450px] left-[130px] bg-[#F19221]"></div>
         </div>
-        <p className="mx-10 lg:w-[700px] lg:mx-64 my-1 lg:my-4 text-[14px] lg:text-[16px]">We are fully committed to improving Health, safety and environmental performance
+        <p className="mx-10 lg:w-[700px] lg:mx-64 my-4 text-[14px] lg:text-[16px]">We are fully committed to improving Health, safety and environmental performance
           across all areas of our business in accordance with ISO 14001, OHSAS 18001 and all
           relevant legal requirements.
         </p>
