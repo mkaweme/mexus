@@ -26,9 +26,9 @@ const Navbar: React.FC = () => {
   const pathName: string = usePathname();
 
   return (
-    <nav className="flex flex-col justify-between pl-6 h-20 w-full bg-[#131949] shadow z-20">
+    <nav className="flex flex-col justify-between lg:pl-6 h-20 w-full bg-[#131949] shadow z-20">
       <div className="flex flex-row justify-between h-full lg:mx-16">
-        <Link href="/" className="flex flex-row items-center w-[27%] pl-1 md:pl-3">
+        <Link href="/" className="flex flex-row items-center w-[27%] pl-5 md:pl-3 lg:ml-1">
           <Image alt="logo" src={ logo } className="hidden lg:flex m-1 w-auto h-10 rounded-lg" />
           <Image alt="logo" src={ logo_2 } className="flex lg:hidden m-1 w-[70px] h-auto rounded-lg object-contain" />
         </Link>
