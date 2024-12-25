@@ -34,9 +34,9 @@ const Projects: React.FC = () => {
   });
 
   return (
-      <div id="projects" className="relative flex flex-col font-poppins w-full h-screen items-center align-middle">
-        <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-10"><span className="text-black border-b-4 border-[#F19221]">OUR</span> PROJECTS</h1>
-        <div className="relative flex flex-col-reverse w-[250px] lg:w-[550px] h-auto LG:mx-20 my-8 z-0">
+      <div id="projects" className="relative flex flex-col font-poppins w-full h-[660px] lg:h-screen items-center align-middle">
+        <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-16 lg:my-10"><span className="text-black border-b-4 border-[#F19221]">OUR</span> PROJECTS</h1>
+        <div className="relative flex flex-col-reverse w-[350px] lg:w-[550px] h-auto my-10 lg:my-8 z-0 bg-pink-400">
           {PROJECTS.map((image, index) => (
             <div
               key={index}
@@ -49,7 +49,7 @@ const Projects: React.FC = () => {
                 alt={image.title}
                 width={500}
                 height={500}
-                className={`w-full h-auto object-cover ${fade}`}
+                className={`w-[400px] lg:w-full h-auto object-cover ${fade}`}
               />
               <div className="absolute w-full font-bold my-6 lg:my-3 p-2 text-center">
                 <h2 className="text-lg">{image.title}</h2>
@@ -64,11 +64,11 @@ const Projects: React.FC = () => {
             <div className="bg-[#F39224] w-[60px] lg:w-[120px] h-[60px] lg:h-[120px]"></div>
             <div className="absolute bottom-0 left-0 bg-white w-[50px] lg:w-[110px] h-[50px] lg:h-[110px]"></div>
           </div>
-          <div className="absolute -bottom-[210px] lg:-bottom-[435px] -left-[20px]">
+          <div className="absolute -bottom-[283px] lg:-bottom-[435px] -left-[20px]">
             <div className="bg-[#F39224] w-[60px] lg:w-[120px] h-[60px] lg:h-[120px]"></div>
             <div className="absolute top-0 right-0 bg-white w-[50px] lg:w-[110px] h-[50px] lg:h-[110px]"></div>
           </div>
-          <div className="absolute -bottom-[210px] lg:-bottom-[435px] -right-[20px]">
+          <div className="absolute -bottom-[283px] lg:-bottom-[435px] -right-[20px]">
             <div className="bg-[#F39224] w-[60px] lg:w-[120px] h-[60px] lg:h-[120px]"></div>
             <div className="absolute top-0 left-0 bg-white w-[50px] lg:w-[110px] h-[50px] lg:h-[110px]"></div>
           </div>
