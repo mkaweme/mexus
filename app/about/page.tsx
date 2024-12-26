@@ -12,7 +12,7 @@ const TEAMMEMBERS = [
     name: "Caesar Chellah",
     body: `Caesar serves as the managing director. Caesar holds a Bachelor's 
     Degree in Mechanical Engineering obtained from the University of Zambia, 
-    is a registered engineer and has over 8 years experince in the field.`,
+    is a registered engineer and has over 6 years experince in the field.`,
   },
   {
     photo: "/assets/makoba.jpg",
@@ -25,19 +25,19 @@ const TEAMMEMBERS = [
   },
   {
     photo: "",
-    title: "Director - Electrical",
+    title: "Electrician",
     name: "Michael",
-    body: `Michael is the Director - Electrical Services. With over 14 years 
-    experince in the field, Michael holds a Diploma in Electrical Engineering
+    body: `Michael works as an electrician and has over 14 years 
+    experince in the field. He holds a Diploma in Electrical Engineering
     and is a registered technologist.`,
   },
   {
     photo: "",
-    title: "Mechanical",
+    title: "Mechanic",
     name: "Mofya",
-    body: `Mofya is the Director - Mechanical Services. With over 14 years 
-    experince in the field, Michael holds a Diploma in Mechanical 
-    Engineering and is a registered technologist.`,
+    body: `Mofya works as a mechanical technologist. With over 14 years 
+    experince in the field, Michael holds a Diploma in Mechanical Fitting
+     and is a registered technologist.`,
   }
 ];
 
