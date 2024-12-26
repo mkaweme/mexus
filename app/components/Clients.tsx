@@ -7,20 +7,21 @@ import RITC from "@/public/assets/ritc.png";
 import MBZC from "@/public/assets/mbz.png";
 
 const Clients: React.FC = () => {
+
   return (
     <div className="flex flex-col items-center pb-16">
       <h1 className="text-[32px] lg:text-[40px] font-poppins font-bold text-[#F19221] my-4"><span className="text-black border-b-4 border-black">
         OUR</span> CLIENTS
       </h1>
-      <div className="grid grid-cols-3 lg:flex flex-row w-full gap-x-3 my-10 items-center justify-between bg-[#EDEEEE] px-6 lg:px-32 py-4">
+      <div className="flex flex-row flex-wrap w-full gap-x-3 gap-y-4 my-10 items-center justify-between bg-[#EDEEEE] px-6 lg:px-32 py-4">
         <div className="flex flex-col items-center">
           <Image src={NFCA} alt="nfca" className="w-[75px] h-auto object-contain" />
           <p className="font-bold">NFCA</p>
         </div>
-        <Image src={BAT} alt="bat" className="w-[150px] h-auto object-contain" />
-        <Image src={Hudtech} alt="hudtech" className="w-[150px] h-auto object-contain" />
-        <Image src={RITC} alt="ritc" className="w-[150px] h-auto object-contain"/>
-        <Image src={MBZC} alt="mbz" className="w-[150px] h-auto object-contain" />
+        <Image src={BAT} alt="bat_logo" width={500} height={500} className="w-[150px] h-auto object-contain" />
+        <Image src={Hudtech} alt="hudtech_logo" width={450} height={157} className="w-[150px] h-auto object-contain"/>
+        <Image src={RITC} alt="ritc_logo" width={800} height={449} className="w-[150px] h-auto object-contain"/>
+        <Image src={MBZC} alt="mbz_logo" width={453} height={138} className="w-[150px] h-auto object-contain" />
         <p className="text-[14px] lg:text-[20px] font-bold w-[150px] text-center">NJATI FOOD SYSTEMS</p>
       </div>
       <h1 className="text-[32px] lg:text-[40px] text-center font-poppins font-bold text-[#F19221] my-4"><span className="text-black border-b-4 border-black">
