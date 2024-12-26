@@ -33,7 +33,7 @@ const TEAMMEMBERS = [
   },
   {
     photo: "",
-    title: "Mechanic",
+    title: "Mechanical Fitter",
     name: "Mofya",
     body: `Mofya works as a mechanical technologist. With over 14 years 
     experince in the field, Michael holds a Diploma in Mechanical Fitting
