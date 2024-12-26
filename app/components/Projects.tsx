@@ -34,9 +34,9 @@ const Projects: React.FC = () => {
   });
 
   return (
-      <div id="projects" className="relative flex flex-col font-poppins w-full h-[660px] lg:h-screen items-center align-middle">
+      <div className="relative flex flex-col font-poppins w-full h-[660px] lg:h-screen items-center align-middle">
         <h1 className="text-[32px] lg:text-[40px] font-bold text-[#F19221] my-16 lg:my-10"><span className="text-black border-b-4 border-[#F19221]">OUR</span> PROJECTS</h1>
-        <div className="relative flex flex-col-reverse w-[350px] lg:w-[550px] h-auto my-10 lg:my-8 z-0 bg-pink-400">
+        <div className="relative flex flex-col-reverse w-[350px] lg:w-[550px] h-auto my-10 lg:my-8 z-0">
           {PROJECTS.map((image, index) => (
             <div
               key={index}
