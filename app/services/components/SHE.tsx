@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import PPE from "@/public/assets/ppe.jpg"
+import PPE from "@/public/assets/ppe.jpg";
 
 const SHE = () => {
   return (
