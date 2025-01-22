@@ -14,9 +14,9 @@ type Navlink = {
 
 const NAVLINKS: Navlink[] = [
   { title: "Home", link: "/" },
-  { title: "Services", link: "/services" },
-  { title: "About", link: "/about" },
-  { title: "Contact Us", link: "/contact" },
+  { title: "Services", link: "/services/" },
+  { title: "About", link: "/about/" },
+  { title: "Contact Us", link: "/contact/" },
 ];
 
 const Navbar: React.FC = () => {
@@ -35,10 +35,9 @@ const Navbar: React.FC = () => {
         <div className="flex flex-col justify-end">
           <ul className="hidden lg:flex flex-row text-[16px] justify-end text-[#D9D9D9]">
             { NAVLINKS.map((navlink) => {
-              const isActive: boolean = pathName.endsWith(navlink.link);
               return (
                 <li key={ navlink.title } className="flex mx-8 align-text-bottom items-end">
-                  <Link href={ navlink.link } className={ isActive ? "flex font-bold h-full px-1 pb-3 items-center text-[#F39224] border-b-4  border-[#F39224]" : "pb-3 hover:text-[#F39224]" }>
+                  <Link href={ navlink.link } className={ (pathName === navlink.link) ? "flex font-bold h-full px-1 pb-3 items-center text-[#F39224] border-b-4  border-[#F39224]" : "pb-3 hover:text-[#F39224]" }>
                     { navlink.title }
                   </Link>
                 </li>)
@@ -73,7 +72,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ pathName }) => {
   return (
     <div className="flex flex-col gap-y-4 mt-4 mx-4">
       { NAVLINKS.map((navLink, index) => {
-        const isActive: boolean = pathName.endsWith(navLink.link);
+        const isActive: boolean = pathName === navLink.link;
         return (
           <Link key={ index } href={ navLink.link } className={ isActive ? "font-semibold text-[#F89E3E] text-[14px] border-b-2" : "font-semibold text-[14px] border-b-2" }>
             { navLink.title }
