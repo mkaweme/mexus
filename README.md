@@ -24,7 +24,7 @@ Engineering supplying
 
 ### 🏠 [Homepage - Generate static site](https://www.mexus.co.zm/)
 
-### ✨ [Demo - Nextjs webapp on Vercel](https://mexus.vercel.app/)
+### ✨ [Demo - Nextjs webapp on Vercel](https://mexus-tau.vercel.app/)
 
 ## Install
 
