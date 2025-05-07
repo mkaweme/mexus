@@ -7,18 +7,10 @@ import { Icon } from "@iconify/react";
 
 const TEAMMEMBERS = [
   {
-    photo: "/assets/caesar.jpeg",
-    title: "Managing Director",
-    name: "Caesar Chellah",
-    body: `Caesar serves as the managing director. Caesar holds a Bachelor's 
-    Degree in Mechanical Engineering obtained from the University of Zambia, 
-    is a registered engineer and has over 6 years experince in the field.`,
-  },
-  {
     photo: "/assets/makoba.jpg",
     title: "Director - Mechanical",
     name: "Makoba Kaweme",
-    body: `Makoba is the Director - Mechanical Services. With over 6 years 
+    body: `Makoba serves as the Managing Director. With over 6 years 
     experince in the field, Makoba holds a Bachelor's Degree in Mechanical 
     Engineering obtained from the University of Zambia and is a registered 
     engineer.`,
@@ -27,7 +19,7 @@ const TEAMMEMBERS = [
     photo: "",
     title: "Electrician",
     name: "Michael",
-    body: `Michael works as an electrician and has over 14 years 
+    body: `Michael works as the Director - Electrical Services and has over 14 years 
     experince in the field. He holds a Diploma in Electrical Engineering
     and is a registered technologist.`,
   },
@@ -35,7 +27,7 @@ const TEAMMEMBERS = [
     photo: "",
     title: "Mechanical Fitter",
     name: "Mofya",
-    body: `Mofya works as a mechanical technologist. With over 14 years 
+    body: `Mofya works as the Director - Mechanical Services. With over 14 years 
     experince in the field, Michael holds a Diploma in Mechanical Fitting
      and is a registered technologist.`,
   }
