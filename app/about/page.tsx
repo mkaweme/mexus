@@ -10,7 +10,7 @@ const TEAMMEMBERS = [
     photo: "/assets/makoba.jpg",
     title: "Director - Mechanical",
     name: "Makoba Kaweme",
-    body: `Makoba serves as the Managing Director. With over 6 years 
+    body: `Makoba serves as the Director - Mechanical. With over 6 years 
     experince in the field, Makoba holds a Bachelor's Degree in Mechanical 
     Engineering obtained from the University of Zambia and is a registered 
     engineer.`,
@@ -27,7 +27,7 @@ const TEAMMEMBERS = [
     photo: "",
     title: "Mechanical Fitter",
     name: "Mofya",
-    body: `Mofya works as the Director - Mechanical Services. With over 14 years 
+    body: `Mofya works as the Mechanical Fitter. With over 14 years 
     experince in the field, Michael holds a Diploma in Mechanical Fitting
      and is a registered technologist.`,
   }
