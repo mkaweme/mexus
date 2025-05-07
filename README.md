@@ -22,9 +22,9 @@ Plant and machinery installation
 Engineering supplying
 
 
-### 🏠 [Homepage](https://mexus.vercel.app/)
+### 🏠 [Homepage - Generate static site](https://www.mexus.co.zm/)
 
-### ✨ [Demo](https://mexus.vercel.app/)
+### ✨ [Demo - Nextjs webapp on Vercel](https://mexus-tau.vercel.app/)
 
 ## Install
 
