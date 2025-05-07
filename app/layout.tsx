@@ -51,7 +51,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={ `${FuturaStd.className} ${FuturaStdBook.className} ${poppins.variable} $antialiased` }>
+      <body className={ `${FuturaStd.className} ${FuturaStdBook.className} ${poppins.variable} antialiased` }>
         <header className="sticky top-0 z-50">
           <Navbar />
         </header>
